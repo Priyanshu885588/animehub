@@ -1,11 +1,18 @@
 import React from "react";
 import { IoMdSearch } from "react-icons/io";
 import { GoArrowRight } from "react-icons/go";
+import { Navbar } from "../components/Navbar";
 import Anime from "../assets/anime.png";
+import Image1 from "../assets/11.jpg";
+import Image2 from "../assets/12.jpg";
+import Image3 from "../assets/14.jpg";
+import Image4 from "../assets/15.jpg";
+import Image5 from "../assets/16.jpg";
+import Image6 from "../assets/17.jpg";
 
 export const Home = () => {
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full bg-[#eeeeee]">
       <div className="overflow-x-hidden">
         <div className="h-56 w-full anime-background flex rounded-b-4xl">
           <div className="flex justify-center items-end w-full">
@@ -30,12 +37,25 @@ export const Home = () => {
             <div className="p-2">
               <IoMdSearch className="text-2xl" />
             </div>
-            <input type="search" className=" w-full" value="Find a sticker" />
+            <input
+              type="search"
+              className=" w-full focus:outline-none"
+              placeholder="Find a sticker"
+            />
             <div className="p-2">
               <GoArrowRight className="text-2xl" />
             </div>
           </div>
         </div>
+        <div className="w-full grid grid-cols-2 gap-4 p-4">
+          <img src={Image1} alt="" className="w-full" />
+          <img src={Image2} alt="" className="w-full" />
+          <img src={Image3} alt="" className="w-full" />
+          <img src={Image4} alt="" className="w-full" />
+          <img src={Image5} alt="" className="w-full" />
+          <img src={Image6} alt="" className="w-full" />
+        </div>
+        <Navbar />
       </div>
     </div>
   );
