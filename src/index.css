@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.anime-background {
+  background-image: url(./assets/anime.jpg);
+  background-size: contain;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  font-family: "Quicksand", serif;
+}
+.quicksand-11 {
+  font-family: "Quicksand", serif;
+}
